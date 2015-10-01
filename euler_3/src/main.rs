@@ -44,6 +44,9 @@ fn factor(val: i64) -> i64 {
             return factor(quot as i64);
         }
     }
+    // we always have to return i64
+    // above will not satisfy the condition because last return is
+    // inside if condition
     return 0;
 }
 
